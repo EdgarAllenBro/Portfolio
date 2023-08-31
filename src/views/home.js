@@ -36,7 +36,11 @@ useEffect(()=>{
 },[message,word,isDeleting])
 
     return (<>
+    <div className='homePg'>
+        <div className='pic'>Picture here</div>
         <h1>Hello my name is Cameron, I am {message}<span className='blink'>|</span></h1>
+    </div>
+    
     </>)
 }
 

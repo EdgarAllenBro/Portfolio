@@ -2,28 +2,28 @@ import { Outlet, Link } from "react-router-dom";
 
 const Layout = () => {
   return (
-<div className="App">
+<div>
   <header className="header">
-            <Link to="/">Home</Link>
+            <Link className="link" to="/">Home</Link>
   </header>
+  <main className="App">
     <div className="display">
         <Outlet/>
     </div>
       <nav className="navSection">
         <ul>
-          
-         
           <li>
-            <Link to="/About">About</Link>
+            <Link className="link" to="/About">About</Link>
           </li>
           <li>
-            <Link to="/Projects">Projects</Link>
+            <Link className='link' to="/Projects">Projects</Link>
           </li>
           <li>
-            <Link to="/Contact">Contact</Link>
+            <Link className="link" to="/Contact">Contact</Link>
           </li>
         </ul>
       </nav>
+    </main>
 </div>
 
   )

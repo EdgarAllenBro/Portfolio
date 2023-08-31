@@ -1,11 +1,25 @@
 .App {
   display: flex;
   height: 100vh;
-  background-color: azure;
+  background-image: url('../images/desktop-wallpaper-cool-black-backgrounds-black-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
-
+.link {
+  text-decoration: none;
+}
 .display {
   width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homePg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 ul {
@@ -17,6 +31,20 @@ ul {
   justify-content: space-around;
   background-color: aquamarine;
 }
+.pic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: rgb(176, 176, 176);
+}
+
+
+
+
+
 .blink {
   animation: blink-animation 1.5s steps(5, start) infinite;
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
@@ -30,4 +58,9 @@ ul {
   to {
     visibility: hidden;
   }
+}
+
+header {
+  height: 10vh;
+  background-color: rgb(74, 90, 98);
 }
